@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact Me</title>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, lightblue, white);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: darkblue;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .contact-box {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: darkblue;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+       }
+
+       form {
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+           margin-top: 25px;
+      }
+
+      input,
+      textarea{
+           padding: 12px;
+           border: 1px solid lightgray;
+           border-radius: 8px;
+           font-size: 16px;
+      }
+
+      textarea {
+           height: 120px;
+           resize: vertical;
+      }
+
+      form button {
+           background-color: darkblue;
+           color: white;
+           border: none;
+           padding: 12px;
+           border-radius: 8px;
+           font-size: 16px;
+           cursor: pointer;
+      }
+
+      @media (max-width: 600px) {
+          body {
+              padding: 20px;
+          }
+          h1 {
+              font-size: 32px;
+          }
+          nav a {
+              margin: 0 7px;
+          }
+          .contact-box {
+              padding: 20px;
+          }
+          input,
+          textarea {
+              font-size: 16px;
+          }
+      }
+   </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Contact Me</h1>
+
+    <div class="contact-box">
+
+     <a>
+        <p> Thank you for visiting my website.</p>
+
+        <p> if you would like to contact me, you can send me an email.</p>
+
+        <a href="chao.a.ying@gmail.com" class="contact-button">
+                Send Me an Email
+     </a>
+
+    <form onsubmit="sendMessage(event)">
+
+        <input type="text" placeholder=" YOUR NAME">
+
+        <input type="email" placeholder="YOUR EMAIL">
+
+        <textarea placeholder="YOUR MESSAGE"></textarea>
+
+        <button type="submit">send Message</button>
+    </form>
+
+     </div>
+
+    <script>
+        function sendMessage(event) {
+ 
+           event.preventDefault();
+
+            alert("Thank you! Your message has been received.");
+        }
+     </script>
+
+</body>
+</head>

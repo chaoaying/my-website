@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<nav>
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+
+
+<head>
+    <title>My First Website</title>
+</head>
+
+
+
+
+
+
+<body>
+    <h1 id="home">Welcome to My new begin</h1>
+ 
+    <img src="profile.jpg" alt="My profile Picture">
+ 
+    <p>Hello! My name ia Philip. I am learing how to creare web design and building my skills one step at a time.</p>
+    <p> my goal is to become good at building website and eventually use this skill to earn money.</p>
+
+
+
+
+
+
+
+
+
+    <h2 id="about">About me</h2>
+    <p class="about-text">I am learnig web dsign because i want to deveiop a useful skill and create a better future for myself.</p>
+    <p class="about-text">my goal isto become good at building website and eventually use this skill to earn money.</p>
+
+    <h2>My skills</h2>
+
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Web Design</div>
+    </div>
+
+
+    <h2>My Projects</h2>
+
+    <div class="project">
+         <h3>My First website</h3>
+         <p> Thisis my first website, created while learning HTML, CSS, and JavaScript</p>
+         <button onclick="showProjectMessage()">View Project</button>
+    </div>
+
+
+
+    <p>chao.a.ying@gmail.com.</p>
+    <a href="mailto:chao.a.ying@gmail.com">
+        <button contact">Contact Me</button>
+    </a>
+
+<button id="myButton"onclick="showMessage()">click me</button>
+    <p id="message"></p>
+
+
+<script>
+    function showMessage() {
+         document.getElementById("message").innerHTML ="Hey! Welcome to my new beginning. ";
+
+         document.getElementById("message").innerHTML =" Thank You!";
+    }
+
+    function showProjectMessage() {
+        alert("This  is my first web project!");
+    }
+</script>
+
+
+<footer>
+     <p>© 2026 my website. all rights reserved.</p>
+     <p>created by me while learning web design.</p>
+</footer>
+
+
+</body> 
+
+<style>
+     img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+      }
+      body {
+          background: linear-gradient( to bottom, lightblue, white);
+          font-family: Arial, sans-serif;
+          text-align: center;
+          padding: 50px 20px;
+          margin: 0;
+      }
+
+         
+
+      h1 {
+            color: darkblue;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      h2 {
+         color: darkblue;
+         margin-top: 40px;
+     }
+     .about-text {
+         max-width: 600px;
+         margin: 0 auto;
+         line-height: 1.6;
+     }
+      button {
+            background=color: darkblue;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+       
+    button:hover {
+        background-color: green;
+        }
+        nav {
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: darkblue;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    
+       @media (max-width: 600px) {
+           body {
+               padding: 20px;
+           }
+           h1 {
+              font-size: 32px:
+           }
+           nav a {
+               margin: 0 7px;
+           }
+           img {
+               width: 140px;
+               height: 140px;
+           }
+  
+           .about-text {
+               font-size: 16px;
+           }
+       }
+     
+       nav {
+           background-color: white;
+           padding: 15px;
+           border-radius: 10px;
+           margin-bottom: 40px;
+           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+       }
+
+     .skill {
+         display: flex;
+         justify-cintent: center;
+         gap: 15px;
+         flex-wrap: wrap;
+         margin-top: 20px;
+      }
+
+    .skill {
+        background-color: darkblue;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+
+    .project {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+    .project h3 {
+        color: darkblue;
+      }
+
+      footer {
+          margin-top: 60px;
+          padding: 20px;
+          background-color: darkblue;
+          color: white;
+          border-radius: 10px,
+      }
+
+    
+   </style>
+</html>
+   

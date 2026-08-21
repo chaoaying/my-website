@@ -13,16 +13,21 @@
 
 <body>
  <section class="hero" id="home">
-    
+
+  <div class="hero-content">
      <h1>Welcome to My new beginning</h1>
-     
-     <img src="profile.jpg" alt="My profile Picture">
      
     <p class="hero-text">
         Hello! My name ia CHAO YING. I am learing how to creare web design and building my skills one step at a time.
     </p>
     
      <a href="about.html" class="hero-button">Learn More About Me</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="profile.jpg" alt="My profile Picture">
+  </div> 
+     
  </section>
     
      <h2 id="about">About me</h2>
@@ -206,10 +211,14 @@
           color: white;
           border-radius: 10px,
       }
-    .hero {
-        max-width: 800px;
+     .hero {
+        max-width: 1100px;
         margin: 60px auto;
         padding: 50px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
     }
     .hero h1 {
         font-size: 48px;
@@ -233,6 +242,21 @@
     }
     .hero-button:hover {
         opacity: 0.8;
+    } 
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
     }
    </style>
 </html>

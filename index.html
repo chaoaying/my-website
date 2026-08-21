@@ -25,7 +25,7 @@
   </div>
 
   <div class="hero-image">
-    <img src="profile.jpg" alt="My profile Picture">
+    <img src="profile.jpg" alt="My Profile Picture">
   </div> 
      
  </section>
@@ -219,7 +219,23 @@
         align-items: center;
         justify-content: space-between;
         gap: 50px;
+    } 
+
+    .hero-content {
+        flex: 1;
     }
+
+    .hero-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+    } 
+
     .hero h1 {
         font-size: 48px;
         margin-bottom: 30px;
@@ -242,21 +258,6 @@
     }
     .hero-button:hover {
         opacity: 0.8;
-    } 
-
-    .hero-content {
-        flex: 1;
-    }
-
-    .hero-image {
-        flex: 1;
-        text-align: center;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 400px;
-        border-radius: 20px;
     } 
 
   @media (max-width: 600px) {
